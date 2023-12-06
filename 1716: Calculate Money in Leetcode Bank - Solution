@@ -1,0 +1,8 @@
+class Solution:
+    def totalMoney(self, n: int) -> int:
+        sol,k=0,0
+        for i in range(n):
+            if i%7==0:
+                k+=1
+            sol+=k+(i%7)
+        return sol
